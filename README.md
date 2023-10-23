@@ -6,8 +6,6 @@ This project is the final project of the Udacity "AI Programming with Python" Na
 
 - **High Accuracy**: Our model utilizes a deep neural network trained on a large dataset to achieve high accuracy in image classification.
 
-- **User-Friendly Interface**: I have developed a simple and user-friendly interface that allows users to upload images and get instant predictions.
-
 - **Result Visualization**: The project includes tools to visualize the results of predictions, making it easier for users to understand and evaluate the classifications.
 
 ## How to Use
