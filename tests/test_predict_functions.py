@@ -5,7 +5,7 @@ import torch
 from torchvision import models
 from PIL import Image
 from tempfile import NamedTemporaryFile
-from python_trainer.predict_functions import PredictFunctions
+from image_classifier.predict_functions import PredictFunctions
 
 class TestPredictFunctions(unittest.TestCase):
     def setUp(self):
@@ -49,9 +49,9 @@ class TestPredictFunctions(unittest.TestCase):
 
         self.assertIs(loaded_model, mock_model)
 
-    @patch('python_trainer.predict_functions.YourClass._open_category_to_names')
-    @patch('python_trainer.predict_functions.YourClass._process_image')
-    @patch('python_trainer.predict_functions.YourClass._get_predicted_flowers')
+    @patch('image_classifier.predict_functions.YourClass._open_category_to_names')
+    @patch('image_classifier.predict_functions.YourClass._process_image')
+    @patch('image_classifier.predict_functions.YourClass._get_predicted_flowers')
     def test_predict(self, mock_get_predicted_flowers, mock_process_image, mock_open_category_to_names):
         """
         Test the prediction process.

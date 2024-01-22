@@ -2,7 +2,7 @@
 import unittest
 from unittest.mock import patch, MagicMock
 #module
-from python_trainer.train_functions import TrainFunctions
+from image_classifier.train_functions import TrainFunctions
 #local
 import os
 import tempfile
@@ -20,7 +20,7 @@ class TestTrainFunctions(unittest.TestCase):
         self.data_dir = "fake_dir"
         self.train_functions = TrainFunctions(data_dir=self.data_dir)
 
-    @patch('python_trainer.train_functions.Loader')
+    @patch('image_classifier.train_functions.Loader')
     @patch('torchvision.datasets.ImageFolder')
     def test_load_data(self, mock_image_folder, mock_loader):
         # Configura los mocks
